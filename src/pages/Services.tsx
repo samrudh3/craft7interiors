@@ -36,7 +36,7 @@ function Services() {
       {
         id: 3,
         title: 'Prestige Waterford, Sheerju',
-        category: 'Bedroom',
+        category: 'TV Sets',
         src: tv3,
       },
       {
@@ -54,7 +54,7 @@ function Services() {
       {
         id: 6,
         title: 'Cozy Bedroom',
-        category: 'Bedroom',
+        category: 'Wardrobe',
         src: wardrobe2,
       },
     ],
