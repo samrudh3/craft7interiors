@@ -1,5 +1,11 @@
 import './Services.css'
 import { useMemo, useRef, useState } from 'react'
+import tv1 from '../assets/TVUnits/TVUnit 1.jpeg'
+import tv2 from '../assets/TVUnits/TVUnit 2.jpeg'
+import tv3 from '../assets/TVUnits/TVUnit 3.jpeg'
+import kitchen1 from '../assets/Kitchen/Kicthen 1.jpeg'
+import wardrobe1 from '../assets/Wardrobe/WarDrobe 1.jpeg'
+import wardrobe2 from '../assets/Wardrobe/WarDrobe 2.jpeg'
 
 type ServiceImage = {
   id: number
@@ -19,37 +25,37 @@ function Services() {
         id: 1,
         title: 'Prestige Waterford, Pratyush',
         category: 'TV Sets',
-        src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1',
+        src: tv1,
       },
       {
         id: 2,
         title: 'Shapoorji Park West, Rahul',
         category: 'TV Sets',
-        src: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2',
+        src: tv2,
       },
       {
         id: 3,
         title: 'Prestige Waterford, Sheerju',
         category: 'Bedroom',
-        src: 'https://images.unsplash.com/photo-1505691723518-36a6f7b8b4de?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3',
+        src: tv3,
       },
       {
         id: 4,
         title: 'Modern Kitchen Layout',
         category: 'Kitchen',
-        src: 'https://images.unsplash.com/photo-1542365887-1b1d3f04f9a7?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4',
+        src: kitchen1,
       },
       {
         id: 5,
         title: 'Luxury Wardrobe',
         category: 'Wardrobe',
-        src: 'https://images.unsplash.com/photo-1598300054021-2df0c3b2f1a8?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5',
+        src: wardrobe1,
       },
       {
         id: 6,
         title: 'Cozy Bedroom',
         category: 'Bedroom',
-        src: 'https://images.unsplash.com/photo-1505692794407-6b4b2b9d6d78?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=6',
+        src: wardrobe2,
       },
     ],
     [],

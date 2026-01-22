@@ -5,7 +5,7 @@ function Home() {
     <section className="hero" id="home">
       <div className="hero-content">
         <h1 className="hero-title">CRAFT7 INTERIORS</h1>
-        <p className="hero-subtitle">Your Potential, our Passion</p>
+        <p className="hero-subtitle">Design Your Dream, We’ll Build It</p>
       </div>
       <div className="hero-background">
         <div className="tech-illustration">

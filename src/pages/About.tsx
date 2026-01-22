@@ -112,9 +112,9 @@ function About() {
         <h1 className="about-title">ABOUT<br />US</h1>
         <div className="about-description">
           <p>
-            We have a strong background in building applications to the web as well as
-            mobile. Our customized solutions combine the best of emerging cloud
-            technologies and creativity to deliver world class results.
+            We design thoughtful interiors that blend style, comfort, and functionality.
+            From concept to completion, we turn ideas into beautifully crafted spaces.
+            Every design is tailored to reflect your lifestyle and vision
           </p>
         </div>
       </div>
