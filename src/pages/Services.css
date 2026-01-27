@@ -6,23 +6,28 @@
 }
 
 .services-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .services-title {
-  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-  font-weight: 700;
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 800;
   color: #fff;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
 }
 
 .services-filters {
   display: flex;
   gap: 0.75rem;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
+  justify-content: center;
+  margin: 0 0 1.25rem 0;
+  flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -42,16 +47,18 @@
 
 .gallery-wrap {
   position: relative;
-  /* make room for the circular scroll buttons outside the gallery */
-  padding: 0 44px;
+  width: 100%;
+  max-width: 1180px;
+  /* add side padding so scroll buttons sit outside the visible cards */
+  padding: 0 60px;
+  box-sizing: border-box;
 }
 
 .gallery {
   display: flex;
   gap: 1.5rem;
   overflow-x: auto;
-  /* give horizontal padding so first/last cards aren't hidden under buttons */
-  padding: 1rem 0;
+  padding: 1.25rem 0;
   scroll-behavior: smooth;
 }
 
@@ -65,15 +72,15 @@
 }
 
 .card {
-  /* Show 4 cards in view on wider screens */
-  flex: 0 0 calc((100% - 3 * 1.5rem) / 4);
-  max-width: 360px;
-  height: 320px;
+  /* Calculate three equal cards per row (minus gaps) so 3 full cards show */
+  flex: 0 0 calc((100% - 3rem) / 3);
+  max-width: 420px;
+  height: 380px;
   background: #222;
   border-radius: 14px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 .card-image {
@@ -111,17 +118,23 @@
 }
 
 .scroll-btn.left {
-  left: 0;
-  transform: translate(-60%, -50%);
+  left: 12px;
+  transform: translateY(-50%);
 }
 .scroll-btn.right {
-  right: 0;
-  transform: translate(60%, -50%);
+  right: 12px;
+  transform: translateY(-50%);
 }
 
 .scroll-btn { z-index: 30 }
 
-@media (max-width: 640px) {
-  .card { flex: 0 0 70%; min-width: 260px; height: 300px }
-  .services-filters { justify-content: center; margin-bottom: 0.75rem }
+@media (max-width: 960px) {
+  .card { flex: 0 0 320px; max-width: 360px; height: 340px }
+}
+
+@media (max-width: 720px) {
+  .services-title { font-size: 1.9rem }
+  .gallery-wrap { max-width: 100%; padding: 0 18px }
+  .card { flex: 0 0 82%; min-width: 280px; height: 320px }
+  .services-filters { gap: 0.5rem }
 }
